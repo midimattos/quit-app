@@ -1,0 +1,20 @@
+@keyframes slide-up {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-item {
+    animation: slide-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+body {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+input, select {
+    -webkit-appearance: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 0px; }
